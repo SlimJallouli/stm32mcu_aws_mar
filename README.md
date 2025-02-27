@@ -62,7 +62,7 @@ open `config.json` with a text editor and update:
 
 You can use the `b_u585_iota02_aws_iot.bin`. You can drag and drop the file to your **[B-U585I-IOT02A](https://www.st.com/en/evaluation-tools/b-u585i-iot02a.html)**
 
-![alt text](<Screenshot 2025-02-27 132734.png>)
+![alt text](<assets/Screenshot 2025-02-27 132734.png>)
 
 ### 5.4 Build the project
 
@@ -152,7 +152,7 @@ Open the `config.json` file and update the follwing
   * "portName": "MyBoardComPort",
   * Update the `certificateFile`, `privateKeyFile` and `root_ca_cert` paths depending on your OS (Default Windows)
 
-![alt text](<Screenshot 2025-02-27 133913.png>)
+![alt text](<assets/Screenshot 2025-02-27 133913.png>)
 
   #### 6.2.2 Run the config script
 
@@ -168,13 +168,13 @@ Type the following commant to get your configuration
 conf get
 ```
 
-![alt text](<Screenshot 2025-02-27 140101.png>)
+![alt text](<assets/Screenshot 2025-02-27 140101.png>)
 
 Type the following commant to get the AWS RootCA
   ```
 pki export cert root_ca_cert
 ```
-![alt text](<Screenshot 2025-02-27 140415.png>)
+![alt text](<assets/Screenshot 2025-02-27 140415.png>)
 
 Now we are sure that everything is properly configured on STM32 side.
 
@@ -185,15 +185,15 @@ Type the following commant to get the device certificate
   ```
 pki export cert tls_cert
 ```
-![alt text](<Screenshot 2025-02-27 140955.png>)
+![alt text](<assets/Screenshot 2025-02-27 140955.png>)
 
 copy the certificate content to a new text docment
 
-![alt text](<Screenshot 2025-02-27 141202.png>)
+![alt text](<assets/Screenshot 2025-02-27 141202.png>)
 
 save the file with extension .pem
 
-![alt text](<Screenshot 2025-02-27 141417.png>)
+![alt text](<assets/Screenshot 2025-02-27 141417.png>)
 
 ### 7.2 Read the ThingName
 
@@ -202,35 +202,35 @@ Type the following commant to get your configuration. and save the thing name. E
   ```
 conf get
 ```
-![alt text](<Screenshot 2025-02-27 141651.png>)
+![alt text](<assets/Screenshot 2025-02-27 141651.png>)
 
 ### 7.3 Register with AWS
 
 * Open AWS Console
 * Click on "Create Things"
 
-![alt text](<Screenshot 2025-02-27 142129.png>)
+![alt text](<assets/Screenshot 2025-02-27 142129.png>)
 
 * Select "Create single Thing" and click Next
 
-![alt text](<Screenshot 2025-02-27 142516.png>)
+![alt text](<assets/Screenshot 2025-02-27 142516.png>)
 
 * On the "Thing Name" use the thing name we have copyed earlier then click Next
 
-![alt text](<Screenshot 2025-02-27 142735.png>)
+![alt text](<assets/Screenshot 2025-02-27 142735.png>)
 
 Select:
 * Use my certificate
 * CA is not registered with AWS IoT
 * Upload your certificate that we have seved earlier and click Next
 
-![alt text](<Screenshot 2025-02-27 143013.png>)
+![alt text](<assets/Screenshot 2025-02-27 143013.png>)
 
 * You can select an existing policy or create new one.
 
 To create new policy, click on "Create policy"
 
-![alt text](<Screenshot 2025-02-27 143349.png>)
+![alt text](<assets/Screenshot 2025-02-27 143349.png>)
 
 
 * Give your policy a name
@@ -253,16 +253,16 @@ Paste the following policy. Note you need to define a policy that fits your need
 }
 ```
 
-![alt text](<Screenshot 2025-02-27 143632.png>)
+![alt text](<assets/Screenshot 2025-02-27 143632.png>)
 
 * Go back to the "Create thing" tab
 * Search for your newly created cert
 * Click "Create Thing"
 
-![alt text](<Screenshot 2025-02-27 144123.png>)
+![alt text](<assets/Screenshot 2025-02-27 144123.png>)
 
 * Rest your board
 * Now your board will connect to AWS and start publishing MQTT messages
 
-![alt text](<Screenshot 2025-02-27 144435.png>)
+![alt text](<assets/Screenshot 2025-02-27 144435.png>)
 
