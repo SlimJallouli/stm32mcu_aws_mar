@@ -64,6 +64,11 @@ You can use the `b_u585_iota02_aws_iot.bin`. You can drag and drop the file to y
 
 ![alt text](<Screenshot 2025-02-27 132734.png>)
 
+### 5.4 Build the project
+
+Follow this [git repo](https://github.com/SlimJallouli/b_u585_iota02_aws_iot) for building the project
+
+
 ## 6 Configure your boards
 To ensure your STM32 board properly connects to AWS, you must configure your board by sending the following over UART using AWS CLI commands:
 
