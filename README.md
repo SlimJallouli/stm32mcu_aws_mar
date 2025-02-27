@@ -47,7 +47,7 @@ Description of the files on this repository
 ### 5.1. Clone the Repositories
 
 ```bash
-git clone https://github.com/SlimJallouli/stm32mcu_aws_mar
+git clone https://github.com/stm32-hotspot/stm32mcu_aws_mar
 ```
 
 ### 5.2. Update config.json
@@ -66,7 +66,7 @@ You can use the `b_u585_iota02_aws_iot.bin`. You can drag and drop the file to y
 
 ### 5.4 Build the project
 
-Follow this [git repo](https://github.com/SlimJallouli/b_u585_iota02_aws_iot) for building the project
+Follow this [git repo](https://github.com/stm32-hotspot/b_u585_iota02_aws_iot) for building the project
 
 
 ## 6 Configure your boards
