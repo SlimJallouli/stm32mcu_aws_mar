@@ -163,14 +163,14 @@ Depending on you operating systrem, run `config.ps1` on windows, `config.sh` on 
   #### 6.2.3 Check your configuration
   Use a serial terminal (TeraTerm or [Web Based Serial Terminal](https://googlechromelabs.github.io/serial-terminal/)) to connect to your board
 
-Type the following commant to get your configuration
+Type the following command to get your configuration
   ```
 conf get
 ```
 
 ![alt text](<assets/Screenshot 2025-02-27 140101.png>)
 
-Type the following commant to get the AWS RootCA
+Type the following command to get the AWS RootCA
   ```
 pki export cert root_ca_cert
 ```
@@ -181,7 +181,7 @@ Now we are sure that everything is properly configured on STM32 side.
 ## 7 Register your boards with AWS
 ### 7.1 Read the device certificate
 
-Type the following commant to get the device certificate
+Type the following command to get the device certificate
   ```
 pki export cert tls_cert
 ```
@@ -197,7 +197,7 @@ save the file with extension .pem
 
 ### 7.2 Read the ThingName
 
-Type the following commant to get your configuration. and save the thing name. Example `eval3-02090046215AD42AC2013`
+Type the following command to get your configuration. and save the thing name. Example `eval3-02090046215AD42AC2013`
 
   ```
 conf get
