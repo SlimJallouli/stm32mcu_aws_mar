@@ -215,7 +215,7 @@ conf get
 
 ![alt text](<assets/Screenshot 2025-02-27 142516.png>)
 
-* On the "Thing Name" use the thing name we have copyed earlier then click Next
+* On the "Thing Name," use the thing name we have copied earlier, then click "Next."
 
 ![alt text](<assets/Screenshot 2025-02-27 142735.png>)
 
