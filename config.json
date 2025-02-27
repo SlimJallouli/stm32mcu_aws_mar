@@ -1,0 +1,8 @@
+{
+  "mqtt_endpoint": "a1qwhobjtvew8t-ats.iot.us-west-2.amazonaws.com",
+  "mqtt_port": 8883,
+  "wifi_ssid": "STTestN750",
+  "wifi_credential": "9a1v2r73027",
+  "portName": "COM7",
+  "root_ca_cert": "certs\\SFSRootCAG2.pem"
+}
